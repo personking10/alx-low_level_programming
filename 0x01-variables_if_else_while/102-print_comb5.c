@@ -1,15 +1,14 @@
 #include <stdio.h>
-
-/** 
+/**
  * main - Entry point
  * Description write a program that prints all possible
- * different combinations of two digits 
+ * different combinations of two digits
  * Return: 0
  */
 
 int main(void)
 {
-	int firstDigit = 0,seconDigit;
+	int firstDigit = 0, seconDigit;
 
 	while (firstDigit <= 99)
 	{
