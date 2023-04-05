@@ -7,7 +7,7 @@
 
 int _strlen_recursion(char *s)
 {
-	int a;
+	char a;
 
 	a = _strlen_recursion(*s);
 	printf("%c\n", a);
