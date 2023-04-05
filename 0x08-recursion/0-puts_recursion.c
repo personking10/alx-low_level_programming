@@ -5,16 +5,16 @@
  * Return: void
  */
 
-void _puts_recursion(char *ps)
+void _puts_recursion(char *s)
 {
-	if (*ps = '\0')
+	if (*s == '\0')
 	{
 		_Putchar('\n');
 	}
 	else
 	{
-		_Putchar(*ps);
-		_puts_recursion(ps + 1);
+		_Putchar(*s);
+		_puts_recursion(s + 1);
 	}
 
 }
