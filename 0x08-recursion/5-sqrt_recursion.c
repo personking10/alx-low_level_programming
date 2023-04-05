@@ -2,21 +2,30 @@
 /**
  * _sqrt_recursion - return square root of number
  * @n: int
+ * @gy: sq root
  * Return: int
  */
+int sq(int n, int gy);
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
+	return (sq(n, 1));
+}
+/**
+ * sq - find sq root
+ * @n: int
+ * @gy: sq root
+ * Return: int
+ */
+int sq(int n, int gy)
+{
+	if (gy * gy == n)
 	{
+		return (gy);
+	}
+	else if (gy * gy < n)
+	{
+		return (sq(n, gy + 1));
+	}
+	else
 		return (-1);
-	}
-	else if (n == 0)
-	{
-		return (0);
-	}
-	else if (n == 1)
-	{
-		return (1);
-	}
-	return (n * _sqrt_recursion(n - 1));
 }
