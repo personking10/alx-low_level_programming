@@ -5,7 +5,7 @@
  * @y: exposant
  * Return: int
  */
-int _pow_recursion(int x, int y);
+int _pow_recursion(int x, int y)
 {
 	int pwr;
 
