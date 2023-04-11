@@ -41,9 +41,9 @@ char *str_concat(char *s1, char *s2)
 	for (ni = 0; ni <= sz1 + sz2; ni++)
 	{
 		if (ni < sz1)
-			mos[ni] = sz1[ni];
+			mos[ni] = s1[ni];
 		else
-			mos[ni] = sz2[ni - sz1];
+			mos[ni] = s2[ni - sz1];
 	}
 	mos[ni] = '\0';
 	return (mos);
