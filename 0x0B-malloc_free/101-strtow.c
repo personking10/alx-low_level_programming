@@ -40,7 +40,7 @@ char **strtow(char *str)
 	na = wrad(str);
 	if (na == 1)
 		return (NULL);
-	wa = (char **)malloc(n * sizeof(char *));
+	wa = (char **)malloc(na * sizeof(char *));
 	if (wa == NULL)
 		return (NULL);
 	wa[na - 1] = NULL;
