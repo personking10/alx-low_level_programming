@@ -39,7 +39,7 @@ char **strtow(char *str)
 		return (NULL);
 	na = wrad(str);
 	if (na == 1)
-		return (NULL);s
+		return (NULL);
 	wa = (char **)malloc(na * sizeof(char *));
 	if (wa == NULL)
 		return (NULL);
