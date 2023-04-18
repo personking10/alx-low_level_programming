@@ -45,31 +45,31 @@ char *_copystring(char *de1, char *sr1)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dog;
+	dog_t *mostafa;
 
 	if (!name || age < 0 || !owner)
 		return (NULL);
 
-	dog = (dog_t *) malloc(sizeof(dog_t));
-	if (dog == NULL)
+	mostafa = (dog_t *) malloc(sizeof(dog_t));
+	if (mostafa == NULL)
 		return (NULL);
 
-	dog->name = malloc(sizeof(char) * (_lengtak(name) + 1));
-	if ((*dog).name == NULL)
+	mostafa->name = malloc(sizeof(char) * (_lengtak(name) + 1));
+	if ((*mostafa).name == NULL)
 	{
-		free(dog);
+		free(mostafa);
 		return (NULL);
 	}
-	dog->owner = malloc(sizeof(char) * (_lengtak(owner) + 1));
-	if ((*dog).owner == NULL)
+	mostafa->owner = malloc(sizeof(char) * (_lengtak(owner) + 1));
+	if ((*mostafa).owner == NULL)
 	{
-		free(dog->name);
-		free(dog);
+		free(mostafa->name);
+		free(mostafa);
 		return (NULL);
 	}
 
-	dog->name = _copystring(dog->name, name);
-	dog->age = age;
-	dog->owner = _copystring(dog->owner, owner);
-	return (dog);
+	mostafa->name = _copystring(mostafa->name, name);
+	mostafa->age = age;
+	mostafa->owner = _copystring(mostafa->owner, owner);
+	return (mostafa);
 }
