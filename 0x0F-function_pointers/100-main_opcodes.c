@@ -3,18 +3,18 @@
 #include <stdio.h>
 /**
  * mos - check code
- * @a: num of arg
- * @z: argumets
+ * @argc: num of arg
+ * @argv: argumets
  * Return: Always 0
  */
-int mos(int a, char **z)
+int main(int argc, char **argv)
 {
-	char *k = (char *)mos;
+	char *k = (char *)main;
 	int q;
 
-	if (a != 2)
+	if (argc != 2)
 		printf("Error\n"), exit(1);
-	q = atoi(z[1]);
+	q = atoi(argv[1]);
 	if (q < 0)
 		printf("Error\n"), exit(2);
 
