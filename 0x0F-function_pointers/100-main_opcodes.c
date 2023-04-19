@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * mos - check code
+ * main - check code
  * @argc: num of arg
  * @argv: argumets
  * Return: Always 0
