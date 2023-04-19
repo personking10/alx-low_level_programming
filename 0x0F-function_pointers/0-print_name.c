@@ -5,7 +5,7 @@
  * @f: the function pointer has been printed
  * Return: void
  */
-void print_name(char *name, void(*f)(char*))
+void print_name(char *name, void(*f)(char *))
 {
 	if (name && f)
 		f(name);
