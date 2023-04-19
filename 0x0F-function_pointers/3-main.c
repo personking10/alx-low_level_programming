@@ -22,6 +22,6 @@ int main(int argc, char **argv)
 	if (!b && (argv[2][0] == '/' || argv[2][0] == '%'))
 		printf("Error\n"), exit(100);
 
-	printf("%d\n", mostafa_func(a,b));
+	printf("%d\n", mostafa_func(a, b));
 	return (0);
 }
