@@ -11,7 +11,7 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	int q = n;
-	char *mos;
+	char *str;
 	va_list ap;
 
 	if (!n)
@@ -22,7 +22,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_start(ap, n);
 	while (q--)
-		printf("%s%s", (mos = va_arg(ap, char *)) ? str : "(nil)",
+		printf("%s%s", (str = va_arg(ap, char *)) ? str : "(nil)",
 				q ? (separator ? separator : "") : "\n");
 	va_end(ap);
 }
