@@ -6,7 +6,7 @@
  * @...: ints
  * Return: void
  */
-int sum_them_all(const unsigned int n, ...);
+int sum_them_all(const unsigned int n, ...)
 {
 	int q = n;
 	va_list ap;
